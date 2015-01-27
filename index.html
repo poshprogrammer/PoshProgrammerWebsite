@@ -1,0 +1,99 @@
+<html>
+	<head lang="en">
+		<meta charset="utf-8">
+		<title>Posh Programmer</title>
+
+		<!-- Personal Style Sheet -->
+		<link href = "css/style.css" rel = "stylesheet">
+
+		<!-- GSAP Library -->
+		<script type="text/javascript" src="js/plugins/CSSPlugin.js"></script>
+		<script type="text/javascript" src="js/TweenLite.js"></script>
+
+		<!-- JQuery Library and Functions -->
+		<script src="js/jquery-1.11.1.js"></script>
+		<script src="js/fadeJQuery.js"></script>
+
+		<!-- Lato Font -->
+		<link href='http://fonts.googleapis.com/css?family=Lato:100,300,700,900' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+
+<!-- 		<nav class = "navbar-fixed-top" role = "navigation">
+			<div>
+				<ul id = "navigation-bar" class = "nav nav-justified">
+					<li class = "active"><a href = "#home">Home</a></li>
+					<li><a href = "#about-me">About Me</a></li>
+					<li><a href = "#skills">Skills</a></li>
+					<li><a href = "#passions">Passions</a></li>
+					<li><a href = "#experience">Experience</a></li>
+					<li><a href = "#contact">Contact</a></li>
+				</ul>
+			</div>
+		</nav> -->
+		<section id="home" class="throwinShade">
+			<div id="bar"></div>
+			<div id="name">
+				Lauren McManamon
+			</div>
+
+
+			<script>
+				window.onload = function()
+				{   				
+					var bar = document.getElementById("bar");
+    				var name = document.getElementById("name");
+    				TweenLite.to(bar, 1, {width:"50vw"});
+    				TweenLite.to(name, 1, {top:"48vh", delay:1});
+    				//TweenLite.to(name, 3, {visibility:"visible", delay: 2});
+
+    				TweenLite.to(name, 1, {opacity: 1, delay: 1.35});
+				}
+			</script>
+
+		</section>
+
+		<section id="sections">
+			
+			<section id="about-me">
+				<div id="section-name" class="thick">
+					About Me
+				</div>
+			</section>
+
+			<section id="skills">
+				<div id="section-name">
+					Skills
+				</div>				
+			</section>
+
+			<section id="experience">
+				<div id="section-name">
+					Experience
+				</div>	
+			</section>
+
+			<section id="contact">
+				<div id="section-name">
+					Contact
+				</div>	
+			</section>
+
+		</section>
+
+
+
+
+
+
+
+
+		
+
+
+
+		
+
+		
+	</body>
+</html>

@@ -1,0 +1,61 @@
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+            <title>GreenSock: Basic Tween</title>
+            <script type="text/javascript" src="js/plugins/CSSPlugin.js"></script>
+            <script type="text/javascript" src="js/TweenLite.js"></script>
+        <style>
+        body{
+            background-color:#000;
+        }
+    #bar
+    {
+        position:relative;
+        width:0px; 
+        height:2px;
+
+        top: 49vh; 
+        left: 25vw; 
+        right: 0; 
+        bottom: 0;
+
+        background-color:#f8efee; 
+    }
+
+    #name
+    {
+        position: relative;
+        text-transform: uppercase;
+        color: #f8efee;
+        font-weight: 100;
+
+    }
+        }
+        </style>
+        </head>
+         
+        <body>
+            <section id="home">
+                <div id="bar"></div>
+                <div id="name">
+                    Lauren McManamon
+                </div>
+
+                <script>
+                    window.onload = function()
+                    {
+                        var bar = document.getElementById("bar");
+                        var logo = document.getElementById("name");
+                        TweenLite.to(bar, 2, {width:"50vw"});
+                        TweenLite.to(logo, 1, {left:"632px", delay:1});
+                    }
+                </script>
+
+
+            </section>
+         
+        <!--- The following scripts are necessary to do TweenLite tweens on CSS properties -->
+         
+        </body>
+        </html>

@@ -1,0 +1,250 @@
+/*
+
+Lato Font:
+	- 100: Thin
+	- 300: Light
+	- 700: Bold
+	- 900: Ultra Bold
+*/
+
+/*
+
+Possible Font Colors:
+	- Periwinkle:
+		- #E2E6F8: Light Periwinkle
+		- #D6B6D4: Medium Periwinkle
+		- #8585C9: Dark Periwinkle
+	- Orange:
+		- #FFEEDF: Light Orange
+		- #FFC5B1: Medium Orange	
+	- Peach:
+		- #FFE0D9: Light Peach
+		- #FFACB2: Medium Peach
+		- #FFA7B0: Dark Peach
+
+
+*/
+
+
+body
+{
+	background-color: #f8efee;
+}
+
+#home
+{
+	position: absolute;
+	width: 100%;
+	height:100vh;
+
+	top: 0; 
+	left: 0; 
+	right: 0; 
+	bottom: 0;
+
+	padding: 0px;
+	margin: 0px;
+
+  	background:
+		-webkit-linear-gradient(
+  		rgba(0, 0, 0, 0.20), 
+  		rgba(0, 0, 0, 0.20)
+  		),
+
+	url('../img/sanfran.jpg');
+	
+/*	background:
+		-o-linear-gradient(
+  		rgba(0, 0, 0, 0.25), 
+  		rgba(0, 0, 0, 0.25)
+  		),
+
+		url('../img/EileanDonan.jpg');
+	
+	background:
+		-moz-linear-gradient(
+  		rgba(0, 0, 0, 0.25), 
+  		rgba(0, 0, 0, 0.25)
+  		),
+
+		url('../img/EileanDonan.jpg');
+  	
+  	background:
+  		linear-gradient(
+      		rgba(255, 255, 255, 0.25), 
+      		rgba(0, 0, 0, 0.25)
+      	),
+
+  		url('../img/EileanDonan.jpg');*/
+	
+	-webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+	background-size: 100%;
+
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+	background-repeat: no-repeat;
+	background-attachment: relative;
+	background-position: top center;
+
+	font-family: 'Lato', sans-serif;
+	text-transform: uppercase;
+	color: #f8efee;
+	font-weight: 100;
+	
+}
+
+#sections
+{
+	top: 100vh;
+	left: 0; 
+	right: 0; 
+	bottom: 0;
+
+	position: absolute;
+	width: 100%;
+	height: 500px;
+}
+
+
+
+#about-me
+{
+	top: 0;
+	left: 0; 
+	right: 0; 
+	bottom: 0;
+
+	position: relative;
+	width: 100%;
+	height: 500px;
+
+	background-color: #E2E6F8;
+}
+
+
+#skills
+{
+	top: 0;
+	left: 0; 
+	right: 0; 
+	bottom: 0;
+
+	position: relative;
+	width: 100%;
+	height: 500px;
+
+	background-color: #FF8FB2;
+}
+
+#experience
+{
+	top: 0;
+	left: 0; 
+	right: 0; 
+	bottom: 0;
+
+	position: relative;
+	width: 100%;
+	height: 500px;
+
+	background-color: #FFEEDF;
+}
+
+#contact
+{
+	top: 0;
+	left: 0; 
+	right: 0; 
+	bottom: 0;
+
+	position: relative;
+	width: 100%;
+	height: 500px;
+
+	background-color: #553A55;
+}
+
+
+#bar
+{
+    position:relative;
+    width:0px; 
+    height:1vh;
+
+	/*    
+	border-width: 1px;
+    border-style: double;
+    border-color: black;
+    */
+
+	top: 49vh; 
+	left: 25vw; 
+	right: 0; 
+	bottom: 0;
+
+    background-color:#f8efee; 
+}
+
+#name
+{
+	position: relative;
+	width: 50vw;
+	height: 8vh;
+
+	padding: 0px;
+	margin: 0px;
+
+	/*
+	border-width: 1px;
+    border-style: double;
+    border-color: black;
+    */
+
+    opacity: 0;
+    
+
+	top: 40vh; 
+	left: 25vw; 
+	right: 0; 
+	bottom: 0;
+
+	font-size: 8vh;
+	text-align: center;
+
+
+}
+
+#section-name
+{
+	position: relative;
+
+	padding: 0px;
+	margin: 0px;
+
+	font-family: 'Lato', sans-serif;
+	text-transform: uppercase;
+	/*color: #f8efee;*/
+	color: #8585C9;
+	font-weight: 100;
+	font-size: 50px;
+	text-align: center;
+
+}
+
+
+
+
+.thick
+{
+	font-weight: 900;
+}
+
+
+
+
+

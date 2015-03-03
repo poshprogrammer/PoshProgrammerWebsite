@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+<script type="text/javascript">
+var duration = 1000;
+var steps = 20;
+function setOpacity(level) {
+  var elem = document.getElementById('text');
+  elem.style.opacity = level;
+  elem.style.filter = "alpha(opacity=" + (level * 100) + ");";
+}
+function fadeIn() {
+  for (var i = 0; i <= 1; i += (1/steps)) {
+    setTimeout("setOpacity(" + i + ")", i * duration);
+  }
+}
+</script>
+
+<style type="text/css">
+body {
+        width: 100%;
+}
+p    {  filter:alpha(opacity=0);
+        opacity: 0;
+        width: 20%;        /* hasLayout in IE6-7*/
+}
+</style>
+
+</head>
+<body>
+  <p id="text">This is the text.</p>
+  <img name="image" src="https://g.twimg.com/Twitter_logo_blue.png" onmouseover="fadeIn()" alt="pic" />
+</body>
+</html>
